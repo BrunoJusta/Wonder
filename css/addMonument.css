@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "archivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf")
+}
+
+h1 {
+    font-family: archivoBlack;
+    margin-left: 400px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+
+body {
+    background-color: #D9D0C7;
+}
+
+form {
+    margin-left: 30px;
+}
+
+.input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#monumentList {
+    margin-top: 80px;
+    background-color: #73574D;
+    size: 15px;
+    color: white;
+    border: 7px solid #73574D;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#sugestionList {
+    margin-top: 30px;
+    margin-left: -13px;
+    background-color: #73574D;
+    size: 15px;
+    color: white;
+    border: 7px solid #73574D;
+    width: 25rem;
+    height: auto;
+    border-radius: 5px;
+}
+
+#titleSugestions {
+    margin: auto;
+    font-size: 20px;
+}
+
+.card {
+    color: white;
+    border: 7px solid #73574D;
+    background-color: #73574D;
+}
+
+#addMnt {
+    margin-top: 80px;
+    margin-left: -80px;
+}
+
+#removeCard {
+    margin-top: 80px;
+}
+
+#txtUserLogged {
+    font-family: archivoBlack;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #ffa812;
+    font-family: archivoBlack;
+
+}
+
+#userAvatar {
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+
+#userAvatar:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}

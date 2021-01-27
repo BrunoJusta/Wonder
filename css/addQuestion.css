@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "archivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf")
+}
+
+h1 {
+    font-family: archivoBlack;
+    margin-left: 400px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+
+body {
+    background-color: #D9D0C7;
+}
+
+#pageNameCenter {
+    font-family: archivoBlack;
+    color: white;
+    margin-left: 300px;
+}
+
+form {
+    margin-left: 30px;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    border: 7px solid #73574D;
+    background-color: #73574D;
+
+}
+
+#txtUserLogged {
+    font-family: archivoBlack;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#userAvatar {
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+
+#userAvatar:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}

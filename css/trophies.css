@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "archivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf")
+}
+
+@font-face {
+    font-family: "fredoka";
+    src: url("../fonts/FredokaOne-Regular.ttf")
+}
+
+#pageNameCenter {
+    margin: auto;
+    font-family: "fredoka";
+}
+
+#bK {
+    margin-left: 250px;
+    margin-top: 80px;
+    background-color: white;
+    width: 1000px;
+    border: 10px solid #eb2020;
+    border-radius: 30px;
+    margin-bottom: 100px;
+}
+
+.card {
+    margin-left: 87px;
+    margin-top: 40px;
+    margin-block-end: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+    font-family: fredoka;
+}
+
+.card-title {
+    font-family: fredoka;
+    font-size: 15px;
+}
+
+#sideMenu {
+    margin-top: 95px;
+    background-color: transparent;
+
+}
+
+#txtUserLogged {
+    font-family: fredoka;
+    margin-left: 10px;
+    font-size: 25spx;
+    cursor: pointer;
+}
+
+#xpBar {
+    background-color: #ffa812;
+    color: black;
+}
+
+.btn {
+    background-color: #ffa812;
+    margin-left: -5px;
+}
+
+
+#userAvatar {
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+
+#userAvatar:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+#titleTxt {
+    /* nome do titulo exemplo:viajante */
+    margin: auto;
+}
+
+#xpDone {
+    display: flex;
+    justify-content: center;
+}

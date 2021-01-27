@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>WONDER</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="icon" href="../img/favicon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/catalog.css">
+    <link rel="stylesheet" href="../css/sideBarView.css">
+    <link rel="stylesheet" href="../css/footerView.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark" style="background-color: #0a7feb;">
+        <form>
+            <!-- BOTAO HAMBURGUER  -->
+            <button class="navbar-toggler" type="button">
+                <span style="font-size:30px;cursor:pointer" id="openNav">&#9776;</span>
+            </button>
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closeBtn" id="closeNav">&times;</a>
+                <a href="backOffice.html" id="BackOfficeView">Voltar</a>
+                <a href="#" id="optionLogout">Sair</a>
+            </div>
+
+            <!-- AVATAR REDIRECIONA PARA PERFIL -->
+            <a class="navbar-brand" href="Profile.html">
+                <img id="userAvatar" src="" height="40"><label id="txtUserLogged"></label>
+            </a>
+        </form>
+        <!-- nome da pagina no meio da navbar -->
+        <div class="topnav-centered">
+            <h1 id="pageNameCenter">CATÁLOGO</h1>
+        </div>
+        <a class="navbar-brand" href="index.html">
+            <!-- ICONE DO SITE WONDER AQUI!! -->
+            <img src="../img/Logo2.png" width="140" height="40" class="d-inline-block" alt="">
+        </a>
+    </nav>
+
+
+    <!-- SideMenu -->
+    <div id="sideMenu" class="w3-sidebar" style="width:6%;right:0;">
+        <a href="index.html" class="w3-bar-item w3-button">
+            <img src="../img/Home_Side_Icon.png" width="80" height="80" class="d-inline-block" alt="">
+        </a>
+        <a href="Profile.html" class="w3-bar-item w3-button">
+            <img src="../img/Perfil_Side_Icon.png" width="80" height="80" class="d-inline-block" alt="">
+        </a>
+        <a href="Quizzes.html" class="w3-bar-item w3-button">
+            <img src="../img/Quizz_Side_Icon.png" width="80" height="80" class="d-inline-block" alt="">
+        </a>
+        <a href="catalog.html" class="w3-bar-item w3-button">
+            <img src="../img/Catalog_Side_Icon.png" width="80" height="80" class="d-inline-block" alt="">
+        </a>
+        <a href="trophies.html" class="w3-bar-item w3-button">
+            <img src="../img/Trophy_Side_Icon.png" width="80" height="80" class="d-inline-block" alt="">
+        </a>
+    </div>
+
+
+
+    <!--DropDown-->
+    <br>
+    <br>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+
+            </div>
+            <div class="col-sm-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ordenar:
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a id="btnAToZ" class="dropdown-item" href="#">A-Z</a>
+                        <a id="btnZToA" class="dropdown-item" href="#">Z-A</a>
+                        <a class="dropdown-item" onclick="location.reload()" href="#">Níveis</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="row">
+                    <div class="col-sm-10">
+                        <div class="input-group md-form form-sm form-2 pl-0">
+                            <input id="searchBar" class="form-control my-0 py-1 red-border" type="text"
+                                placeholder="Pesquisar" aria-label="Search">
+                            <button id="btnSearch" class="btn" type="button"><i class="fa fa-search"></i></button>
+                            <button id="btnFav" class="btn"> Favoritos <i class="fa fa-star"></i></button>
+                            <button id="btnClear" class="btn" type="button"><i class="fa fa-close"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+
+
+
+    <!--Cards-->
+    <div class="container">
+        <p id="myCatalog"></p>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modalTitle"></h2>
+                    <button type="button" class="close" data-dismiss="modal"
+                        onclick="location.reload();">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img id="modalImg" class="card-img-top" src="">
+                    <h5 id="modalCityCountry"></h5>                   
+                    <h5 id="modalYear"></h5>
+                    <a id="map" class="btn" href="#" style="font-family: fredoka; font-size:15px;">Mapa: <img src="../img/Map_Icon.png" width="40" height="40" class="d-inline-block" alt=""></a>
+                    <br>
+                        <div id="descBorder">
+                        <h5 id="descLabel">Detalhes:</h5>
+                        <p id="modalDescription"></p>
+                    </div>
+
+                    <!-- <h5 id="maps" style="font-family: fredoka;">Localização no Mapa:</h5>
+                    <div id="googleMap" style="width:100%;height:120px;"></div> -->
+
+                </div>
+                <div class="modal-footer">
+                    <form action="" method="post" id="com">
+                        <label style="color: white; font-family:fredoka">Comentário: <br>
+                            <textarea id="txtarea" cols="51" rows="2" name="mes" style="font-family:verdana"></textarea>
+                        </label>
+                        <br><br>
+                        <input id="enviar" type="submit" class="btn" name="submit" value="Enviar" class="texty">
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <div id="comments" style="max-width: 480px;" class="container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div id="htmlSecond">
+        <div id="bodySecond">
+            <div class="content">
+            </div>
+            <footer id="myFooter">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img src="../img/logo.png" id="wonderLogo">
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="../img/esmad.png" id="esmadLogo">
+                        </div>
+                        <div class="col-sm-2">
+                            <h5>Realizador por:</h5>
+                            <ul>
+                                <li><a href="https://github.com/BrunoJusta">Bruno Justa</a></li>
+                                <li><a href="https://github.com/Aewire">João Campos</a></li>
+                                <li><a href="https://github.com/Nuno9180580">Nuno Gomes</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2">
+                            <h5>Suporte</h5>
+                            <ul>
+                                <li><a href="#">Perguntas frequentes</a></li>
+                                <li><a href="#">Ajuda</a></li>
+                                <li><a href="#">Fórum</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="social-networks">
+                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="google"><i class="fa fa-instagram"></i></a>
+                            </div>
+                            <button type="button" class="btn btn-default">WONDER</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2019 Copyright Wonder </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+ <!--    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(48.858519, 2.294498),
+                zoom: 16,
+            };
+            map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({
+                position: {
+                    lat: 48.858519,
+                    lng: 2.294498
+                },
+                map: map
+            });
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFyTdkoGE5aODR22PtIJluOr1A1vFhpCk&callback=myMap">
+    </script> -->
+
+    <script type="module" src="../js/controller/catalog.js"></script>
+    <script type="module" src="../js/views/sideBarView.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "archivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf")
+}
+
+@font-face {
+    font-family: "fredoka";
+    src: url("../fonts/FredokaOne-Regular.ttf")
+}
+
+h1 {
+    font-family: fredoka;
+    margin-left: 400px;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0);
+    color: white;
+
+}
+
+body {
+    background-color: #D5F8FF;
+}
+
+
+#userAvatar {
+    border: 1.5px solid white;
+    border-radius: 15px;
+}
+
+#userAvatar:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+
+#welcome {
+    margin-top: 40px;
+    margin-left: 280px;
+    font-size: 44px;
+    color: #025e84;
+}
+
+#pageNameCenter {
+    font-family: fredoka;
+    color: white;
+}
+
+#xpBar {
+    background-color: red;
+}
+
+.imgButton {
+    width: 60%;
+    height: auto;
+}
+
+#sugCard {
+    align-content: center;
+    margin-left: 550px;
+    margin-bottom: 150px;
+}
+
+#startGame {
+    background-image: url("../img/BkgPlay.jpg");
+    background-repeat: no-repeat;
+    background-size: 60rem 35rem;
+    border: 7px solid #025e84;
+    border-radius: 30px;
+}
+
+#sugestMnmt {
+    background-image: url("../img/BkgSugerir.jpg");
+    background-repeat: no-repeat;
+    background-size: 60rem 35rem;
+    border: 7px solid #025e84;
+    border-radius: 30px;
+}
+
+#startBtn {
+    margin-left: 420px;
+    margin-bottom: -800px;
+    border: 5px solid black;
+    border-radius: 20px;
+}
+
+#videoContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+    
+}
+
+#you{
+    border: 7px solid #ffa812;
+    border-radius: 20px;
+    background-color: #025e84
+}
+
+#you2{
+    border: 0px solid #ffa812;
+    border-radius: 20px;
+}
+
+#topMenu {
+    display: flex;
+    justify-content: center;
+    padding-left: 100px;
+
+
+}
+
+#banner {
+    width: 130px;
+    height: 170px;
+    margin-right: 90px;
+}
+
+.d-inline-block:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+#txtUserLogged {
+    font-family: fredoka;
+    margin-left: 10px;
+    font-size: 25spx;
+    cursor: pointer;
+}
+
+.card-text {
+    font-family: fredoka;
+}
+
+#sugestions {
+    background-color: #ffa812;
+    height: 60px;
+    width: 340px;
+    margin-left: 46px;
+    margin-top: 16px;
+    font-size: 30px;
+
+}
+
+#sugTitle {
+    margin-left: 16px;
+}
+
+#sugCont {
+    display: flex;
+    justify-content: center;
+}
+
+#podium {
+    margin-top: 50px;
+    width: 1000px;
+    height: 1200px;
+
+    color: black;
+    border-radius: 5px;
+}
+
+#title{
+    color: #025e84;
+    margin-top: 40px;
+    margin-left: 280px;
+}
+
+.score {
+    font-size: 20px;
+}
+
+#stImg, #stFavImg {
+    border: 5px solid #DAA520;
+    border-radius: 20px;
+}
+
+#ndImg, #ndFavImg  {
+    border: 5px solid #c0c0c0;
+    border-radius: 20px;
+}
+
+#rdImg, #rdFavImg  {
+    border: 5px solid #b87333;
+    border-radius: 20px;
+}
+
+#winner {
+    margin: auto;
+    margin-left: 230px;
+    margin-right: -100px;
+    width: 320px;
+    border: 7px solid #DAA520;
+    border-radius: 30px;
+    background-color: #025e84;
+    color:white;
+    font-family: fredoka;
+}
+
+#second {
+    margin: auto;
+    margin-left: 75px;
+    width: 320px;
+    border: 7px solid #c0c0c0;
+    border-radius: 30px;
+    background-color: #025e84;
+    color:white;
+    font-family: fredoka;
+}
+
+#third {
+    margin: auto;
+    margin-left: -80px;    
+    width: 320px;
+    border: 7px solid #b87333;
+    border-radius: 30px;
+    background-color: #025e84;
+    color:white;
+    font-family: fredoka;
+}
+
+

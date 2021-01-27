@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "archivoBlack";
+    src: url("../fonts/ArchivoBlack-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "fredoka";
+    src: url("../fonts/FredokaOne-Regular.ttf");
+  }
+  
+  .card {
+    background-color: hsl(209, 92%, 48%);
+    color: whitesmoke;
+    font-family: fredoka;
+  }
+  
+  #cardTitle {
+    
+    color: white;
+    font-family: fredoka;
+    font-size: 17.2px;
+  }
+  
+  #cardOut {
+    background-color: white;
+    border: 5px solid hsl(209, 92%, 48%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #cardIn {
+    margin-left: 10px;
+    margin-top: 11px;
+    height: 328px;
+  }
+  
+  #comentsName {
+    margin-left: 1px;
+    word-break: break-all;
+  }
+  
+  #cmtDate {
+    font-size: 12px;
+  }
+  
+  #userAvatar {
+    border: 1.5px solid white;
+    border-radius: 15px;
+  }
+  
+  #dropdownMenuButton {
+    background-color: #ffa812;
+    color: black;
+    font-family: fredoka;
+    font-size: 18px;
+  }
+  
+  #modalTitle {
+    font-family: fredoka;
+    color: white;
+  }
+  
+  #modalYear {
+    font-family: fredoka;
+  }
+  
+  #modalCityCountry {
+    font-family: fredoka;
+    font-size: 25px;
+  }
+  
+  #modalImg {
+    border: 5px solid hsl(209, 92%, 48%);
+    border-radius: 5px;
+    background-color: hsl(209, 92%, 48%);
+    margin-bottom: 10px;
+  }
+ /*  #googleMap{
+    border: 5px solid hsl(209, 92%, 48%);
+    border-radius: 7px;
+  }*/
+   #map{
+     margin-top: -90px;
+    margin-left:380px;
+  } 
+ 
+
+  
+  #descLabel {
+    font-family: fredoka;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  
+  #descBorder {
+    border: 5px solid hsl(209, 92%, 48%);
+    border-radius: 5px;
+  }
+  
+  #pageNameCenter {
+    font-family: fredoka;
+    margin:auto;
+    
+  }
+  
+  #txtUserLogged {
+    font-family: fredoka;
+    margin-left: 10px;
+    font-size: 25spx;
+    cursor: pointer;
+  }
+  
+  #modalDescription {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-family: Verdana;
+  }
+  
+  .modal-header,
+  .modal-footer {
+    background-color: hsl(209, 92%, 48%);
+  }
+  
+  .input-group.md-form.form-sm.form-2 input.amber-border {
+    border: 1px solid #ffa812;
+  }
+  
+  #btnSearch {
+    background-color: #ffa812;
+    margin-left: -5px;
+  }
+  
+  #btnClear {
+    margin-left: 10px;
+    background-color: #ffa812;
+  }
+    
+  #btnFav {
+    margin-left: 10px;
+    background-color: #ffa812;
+    font-family: fredoka;
+  }
+  .view {
+    font-family: fredoka;
+    font-size: 20px;
+    background-color: #ffa812;
+    color: black;
+    border: 2px solid #ffa812;
+    border-radius: 15px;
+  }
+  
+  #alignOptions {
+    display: flex;
+  }
+  
+  #likeCard {
+    margin-left: 50px;
+    margin-top: 0px;
+    background-image: url("../img/favEmpty.png");
+  }
+  
+  /* .image_off,
+  #likeCard:hover .image_on {
+      display: none
+  }
+  
+  .image_on,
+  #likeCard:hover .image_off {
+      display: block
+  } */
+  
+  #enviar {
+    background-color: #ffa812;
+    color: black;
+    margin-top: -40px;
+    font-family: fredoka;
+  }
+  
+  #btnClear:hover,
+  #enviar:hover,
+  #myBtn4:hover,
+  #dropdownMenuButton:hover,
+  #userAvatar:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+  }
+  
+  #myModal {
+    color: black;
+  }
+  
+  #sideMenu {
+    margin-top: 95px;
+    background-color: transparent;
+  }
+  
+  #comments {
+    background-color: white;
+    border: 5px solid #ffa812;
+    border-radius: 5px;
+  }
+  
+  #cardImg {
+    height: 198.46px;
+    width: 298px;
+  }
+  
+  #com {
+    margin-top: -10px;
+    margin-left: 15px;
+  }
+  
+  .card:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+    background-color: #50b4ff;
+    transition: 0.5s;
+  }
+  
